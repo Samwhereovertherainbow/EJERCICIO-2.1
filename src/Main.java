@@ -1,15 +1,15 @@
-class Persona {
+class Per {
     String nombre;
     int edad;
 
-    public Persona() {
+    public Per() {
         nombre = "Sin nombre";
         edad = 0;
     }
 }
 
-class Alumno extends Persona {
-    public Alumno() {
+class Al extends Per {
+    public Al() {
         System.out.println("Se crea Alumno...");
     }
 
@@ -19,10 +19,10 @@ class Alumno extends Persona {
     }
 }
 
-class Profesor extends Persona {
+class Prof extends Per {
     private int numEmpleado;
 
-    public Profesor(int numEmpleado) {
+    public Prof(int numEmpleado) {
         this.numEmpleado = numEmpleado;
     }
 
@@ -34,8 +34,8 @@ class Profesor extends Persona {
 
 public class Main {
     public static void main(String[] args) {
-        Alumno a = new Alumno();
-        Profesor p = new Profesor(10008000);
+        Al a = new Al();
+        Prof p = new Prof(10008000);
         System.out.println(a);
         System.out.println(p);
     }
